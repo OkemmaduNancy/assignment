@@ -1,16 +1,14 @@
 function greetings(the_time) {
-
-    if (t === 1) {
+    if (the_time === 1){
         return "Good Morning";
     }
-    if (t === 2) {
+    else if (the_time === 2){
         return "Good Afternoon";
     }
-    else if (t === 3) {
-        return "Good Evening"
+    else if (the_time === 3){
+        return "Good Evening";
     }
-
-    else {
+    else{
         return "You are Welcome"
     }
 }

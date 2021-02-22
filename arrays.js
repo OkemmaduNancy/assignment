@@ -6,3 +6,6 @@ for(let i = 0; i < names.length; i++) {
 names.forEach((myData, index, array)=>{
     console.log(array)
     });
+
+
+
