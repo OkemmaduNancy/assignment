@@ -17,13 +17,9 @@ function greetings(the_time) {
 
 }
 
-const value = greetings("5pm-11pm")
+console.log(greetings("8am-11am"));
 
 
-for (let i = 0; i < value.length; i++) {
-    const char = value[i];
-    console.log(`Letter ${i} is ${char}`);
-}
 
 
 
