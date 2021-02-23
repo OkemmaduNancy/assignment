@@ -1,25 +1,33 @@
-function greetings(the_time) {
+
+
+function greetings(the_time) {  
+    let answer = "";
+
     switch (the_time) {
-        case "8am-11am":
+        case the_time > 11:
             answer = "Good Morning"
             break;
-        case "12pm-4pm":
+        case the_time > 15:
             answer = "Good Afternoon"
             break;
-        case "5pm-11pm":
+        case the_time < 18:
             answer = "Good Evening"
             break;
 
         default: "You are Welcome"
             break;
     }
+
     return answer;
 
 }
 
-console.log(greetings("8am-11am"));
 
+const date = new Date()
+const hours = date.getHours()
 
+const currentGreeting = greetings()
+console.log(currentGreeting);
 
 
 
